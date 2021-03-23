@@ -11,7 +11,7 @@
   },
   "consumes": ["application/json"],
   "produces": ["application/json"],
-  "servers": [{ "url": "insert server here" }],
+  "servers": [{ "url": "https://protest-backend.goit.global" }],
   "tags": [
     {
       "name": "Auth",
@@ -498,7 +498,7 @@
             "questionId": 8,
             "answers": [
               "RUP",
-              "Canban",
+              "Kanban",
               "Scrum",
               "Agile",
               "Waterfall",
@@ -606,7 +606,7 @@
               "Waterfall",
               "Scrum",
               "Agile",
-              "Canban",
+              "Kanban",
               "This definition applies to all methodologies",
               "There is not a right option"
             ]
@@ -651,7 +651,7 @@
               "Multiple coverage conditions",
               "Coverage Statement",
               "All options are correct",
-              "All options are incorrent"
+              "All options are incorrect"
             ]
           },
           {
@@ -686,7 +686,7 @@
               "Functional testing",
               "Centiliter",
               "All options are correct",
-              "All options are incorrent"
+              "All options are incorrect"
             ]
           },
           {
@@ -719,7 +719,7 @@
               "Disguised defect",
               "Defect",
               "All options are correct",
-              "All options are incorrent"
+              "All options are incorrect"
             ]
           },
           {
@@ -731,7 +731,7 @@
               "Smoke and sanity tests can be performed using an automation tool",
               "Smoke testing performed for a specific build is also called build verification test",
               "All options are correct",
-              "All options are incorrent"
+              "All options are incorrect"
             ]
           },
           {
@@ -754,7 +754,7 @@
               "Test cases should be reviewed and revised regularly",
               "Clustering modules that contain most of the defects",
               "All options are correct",
-              "All options are incorrent"
+              "All options are incorrect"
             ]
           },
           {
@@ -766,7 +766,7 @@
               "Boundary value analysis",
               "Data stream",
               "All options are correct",
-              "All options are incorrent"
+              "All options are incorrect"
             ]
           },
           {
@@ -842,7 +842,7 @@
             },
             {
               "questionId": 5,
-              "answer": "Canban"
+              "answer": "Kanban"
             },
             {
               "questionId": 3,
@@ -911,7 +911,7 @@
             },
             {
               "questionId": 29,
-              "answer": "All options are incorrent"
+              "answer": "All options are incorrect"
             },
             {
               "questionId": 30,

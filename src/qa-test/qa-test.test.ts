@@ -192,7 +192,7 @@ describe("QA-test router test suite", () => {
         },
         {
           questionId: 5,
-          answer: "Canban",
+          answer: "Kanban",
         },
         {
           questionId: 3,
@@ -247,7 +247,7 @@ describe("QA-test router test suite", () => {
         },
         {
           questionId: 5,
-          answer: "Canban",
+          answer: "Kanban",
         },
         {
           questionId: 3,
@@ -302,7 +302,7 @@ describe("QA-test router test suite", () => {
         },
         {
           questionId: 5,
-          answer: "Canban",
+          answer: "Kanban",
         },
         {
           questionId: 3,
@@ -353,7 +353,7 @@ describe("QA-test router test suite", () => {
         },
         {
           questionId: 5,
-          answer: "Canban",
+          answer: "Kanban",
         },
         {
           questionId: 2,
@@ -515,7 +515,7 @@ describe("QA-test router test suite", () => {
         },
         {
           questionId: 29,
-          answer: "All options are incorrent",
+          answer: "All options are incorrect",
         },
         {
           questionId: 30,
@@ -569,7 +569,7 @@ describe("QA-test router test suite", () => {
         },
         {
           questionId: 29,
-          answer: "All options are incorrent",
+          answer: "All options are incorrect",
         },
         {
           questionId: 30,
@@ -623,7 +623,7 @@ describe("QA-test router test suite", () => {
         },
         {
           questionId: 29,
-          answer: "All options are incorrent",
+          answer: "All options are incorrect",
         },
         {
           questionId: 30,
@@ -672,7 +672,7 @@ describe("QA-test router test suite", () => {
         },
         {
           questionId: 29,
-          answer: "All options are incorrent",
+          answer: "All options are incorrect",
         },
         {
           questionId: 30,

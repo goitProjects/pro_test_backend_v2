@@ -54,11 +54,11 @@ export default [
       "Waterfall",
       "Scrum",
       "Agile",
-      "Canban",
+      "Kanban",
       "This definition applies to all methodologies",
       "There is not a right option",
     ],
-    rightAnswer: "Canban",
+    rightAnswer: "Kanban",
   },
   {
     question: "What does XP stands for in testing",
@@ -92,7 +92,7 @@ export default [
     questionId: 8,
     answers: [
       "RUP",
-      "Canban",
+      "Kanban",
       "Scrum",
       "Agile",
       "Waterfall",

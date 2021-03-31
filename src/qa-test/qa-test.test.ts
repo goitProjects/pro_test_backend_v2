@@ -383,7 +383,11 @@ describe("QA-test router test suite", () => {
       });
 
       it("Should return an expected result", () => {
-        expect(response.body).toEqual({ result: "92%" });
+        expect(response.body).toEqual({
+          result: "92%",
+          mainMessage: "Great!",
+          secondaryMessage: "You have very strong QA knowledge",
+        });
       });
     });
 
@@ -708,7 +712,11 @@ describe("QA-test router test suite", () => {
       });
 
       it("Should return an expected result", () => {
-        expect(response.body).toEqual({ result: "92%" });
+        expect(response.body).toEqual({
+          result: "92%",
+          mainMessage: "Great!",
+          secondaryMessage: "You have very strong QA knowledge",
+        });
       });
     });
 

@@ -40,6 +40,8 @@ export const loadTheoryTest = (req: Request, res: Response) => {
 export const techResults = (req: Request, res: Response) => {
   const answers = req.body.answers;
   let result = 0;
+  let mainMessage = "";
+  let secondaryMessage = "";
   const questionIds = [
     ...new Set(
       answers.map(
@@ -65,12 +67,46 @@ export const techResults = (req: Request, res: Response) => {
       result += 8.33333;
     }
   });
-  return res.status(200).send({ result: `${Math.round(result)}%` });
+  if (result <= 10) {
+    mainMessage = "Oh no!";
+    secondaryMessage = "You lack basic QA knowledge";
+  }
+  if (result > 10 && result <= 30) {
+    mainMessage = "Maybe next time";
+    secondaryMessage = "Your QA knowledge is pretty weak, but don't give up!";
+  }
+  if (result > 30 && result <= 50) {
+    mainMessage = "Keep improving";
+    secondaryMessage = "Keep learning and you'll get there!";
+  }
+  if (result > 50 && result <= 70) {
+    mainMessage = "Getting there!";
+    secondaryMessage =
+      "Good result, but you still lack some basics of QA knowledge";
+  }
+  if (result > 70 && result <= 90) {
+    mainMessage = "Not bad!";
+    secondaryMessage = "But you still need to learn some materials";
+  }
+  if (result > 90 && result <= 99) {
+    mainMessage = "Great!";
+    secondaryMessage = "You have very strong QA knowledge";
+  }
+  if (Math.round(result) === 100) {
+    mainMessage = "Perfect!";
+    secondaryMessage =
+      "You've answered all questions correctly, congratulations!";
+  }
+  return res
+    .status(200)
+    .send({ result: `${Math.round(result)}%`, mainMessage, secondaryMessage });
 };
 
 export const theoryResults = (req: Request, res: Response) => {
   const answers = req.body.answers;
   let result = 0;
+  let mainMessage = "";
+  let secondaryMessage = "";
   const questionIds = [
     ...new Set(
       answers.map(
@@ -96,5 +132,37 @@ export const theoryResults = (req: Request, res: Response) => {
       result += 8.33333;
     }
   });
-  return res.status(200).send({ result: `${Math.round(result)}%` });
+  if (result <= 10) {
+    mainMessage = "Oh no!";
+    secondaryMessage = "You lack basic QA knowledge";
+  }
+  if (result > 10 && result <= 30) {
+    mainMessage = "Maybe next time";
+    secondaryMessage = "Your QA knowledge is pretty weak, but don't give up!";
+  }
+  if (result > 30 && result <= 50) {
+    mainMessage = "Keep improving";
+    secondaryMessage = "Keep learning and you'll get there!";
+  }
+  if (result > 50 && result <= 70) {
+    mainMessage = "Getting there!";
+    secondaryMessage =
+      "Good result, but you still lack some basics of QA knowledge";
+  }
+  if (result > 70 && result <= 90) {
+    mainMessage = "Not bad!";
+    secondaryMessage = "But you still need to learn some materials";
+  }
+  if (result > 90 && result <= 99) {
+    mainMessage = "Great!";
+    secondaryMessage = "You have very strong QA knowledge";
+  }
+  if (Math.round(result) === 100) {
+    mainMessage = "Perfect!";
+    secondaryMessage =
+      "You've answered all questions correctly, congratulations!";
+  }
+  return res
+    .status(200)
+    .send({ result: `${Math.round(result)}%`, mainMessage, secondaryMessage });
 };

@@ -935,6 +935,16 @@
             "type": "string",
             "description": "Test's result",
             "example": "91%"
+          },
+          "mainMessage": {
+            "type": "string",
+            "description": "Result's main message",
+            "example": "Great!"
+          },
+          "secondaryMessage": {
+            "type": "string",
+            "description": "Result's secondary message",
+            "example": "You have very strong QA knowledge"
           }
         }
       },

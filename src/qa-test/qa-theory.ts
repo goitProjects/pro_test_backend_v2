@@ -18,7 +18,6 @@ export default [
       "Product analysis - Working with requirements -. Developing a test strategy and planning quality control procedures - Creating test documentation - Prototype testing - Basic testing - Stabilization - Operation",
       "Requirements Management - Product Analysis - Developing a Test Strategy and Planning Quality Control Procedures - Prototype Testing - Generating Test Documentation - Basic Testing - Stabilization - Operation",
       "Requirements Management - Product Analysis - Developing a Test Strategy and Planning Quality Control Procedures - Generating Test Documentation - Prototype Testing - Stabilization - Basic Testing - Operation",
-      "Requirements Management - Product Analysis - Developing a Test Strategy and Planning Quality Control Procedures - Prototype Testing - Generating Test Documentation - Basic Testing - Stabilization - Operation",
     ],
     rightAnswer:
       "Product analysis - Working with requirements -. Developing a test strategy and planning quality control procedures - Creating test documentation - Prototype testing - Basic testing - Stabilization - Operation",

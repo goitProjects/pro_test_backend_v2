@@ -163,7 +163,7 @@ describe("Auth router test suite", () => {
         expect(
           jwt.verify(
             response.body.accessToken,
-            process.env.JWT_SECRET as string
+            process.env.JWT_ACCESS_SECRET as string
           )
         ).toBeTruthy();
       });
@@ -172,7 +172,7 @@ describe("Auth router test suite", () => {
         expect(
           jwt.verify(
             response.body.refreshToken,
-            process.env.JWT_SECRET as string
+            process.env.JWT_REFRESH_SECRET as string
           )
         ).toBeTruthy();
       });
@@ -374,7 +374,7 @@ describe("Auth router test suite", () => {
         expect(
           jwt.verify(
             response.body.newAccessToken,
-            process.env.JWT_SECRET as string
+            process.env.JWT_ACCESS_SECRET as string
           )
         ).toBeTruthy();
       });
@@ -383,7 +383,7 @@ describe("Auth router test suite", () => {
         expect(
           jwt.verify(
             response.body.newRefreshToken,
-            process.env.JWT_SECRET as string
+            process.env.JWT_REFRESH_SECRET as string
           )
         ).toBeTruthy();
       });
